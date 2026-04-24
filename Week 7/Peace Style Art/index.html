@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Style Transfer Image</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.5.0/dist/ml5.min.js"></script>
+    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
+  </head>
+
+  <body>
+    <p id="statusMsg">Loading Models...</p>
+    <button id="transferBtn">Transfer!</button>
+
+    <p>Angelic Dove:</p>
+    <!-- change input image here by editing filename -->
+    <img src="images/bird.png" alt="input img" id="inputImg1" />
+    <p>Buddha:</p>
+    <img src="images/buddha.png" alt="input img" id="inputImg2" />
+    <p>Minecraft Island:</p>
+    <img src="images/minecraft.png" alt="input img" id="inputImg3" />
+    <p>Mona Lisa:</p>
+    <img src="images/mona.png" alt="input img" id="inputImg4" />
+    <p>Thailand:</p>
+    <img src="images/thai.png" alt="input img" id="inputImg5" />
+    
+    <div id="styleA">
+      <p>
+        Style A:
+        <a href="https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa"
+          >The Great Wave off Kanagawa, 1829 - Katsushika Hokusai</a
+        >
+      </p>
+      <img src="images/wave.jpg" alt="style one" />
+    </div>
+
+    <div id="styleB">
+      <p>
+        Style B:
+        <a href="https://en.wikipedia.org/wiki/Udnie"
+          >Udnie (Young American Girl, The Dance), 1913 - Francis Picabia</a
+        >
+      </p>
+      <img src="images/udnie.jpg" alt="style two" />
+    </div>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>
